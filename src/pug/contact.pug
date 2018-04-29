@@ -1,0 +1,34 @@
+.s-contact
+	.container
+		h2.s-contact__title.title-2 Контакты
+		.s-contact__grid
+			.s-contact__column.s-contact__column_info
+				.s-contact__slogan Будем рады с вами сотрудничать
+				.s-contact__subgrid
+					.s-contact__cell.s-contact__cell_form
+						form.form-contact.s-contact__form
+							.form-contact__body
+								.form-contact__cell
+									input.field.field_name(type="text" placeholder="Имя" required)
+								.form-contact__cell
+									input.field.field_phone(type="tel" placeholder="Телефон" required)
+								.form-contact__cell
+									input.field.field_company(type="text" placeholder="Компания" required)
+							button.form-contact__button.button-contact Оставить заявку
+					.s-contact__cell.s-contact__cell_address
+						.s-contact__contact.contact
+							.contact__label Адрес
+							.contact__value г. Санкт-Петербург, ул. Менделеевская, д. 9
+
+						.s-contact__contact.contact
+							.contact__label Телефон
+							.contact__value 8 800 775 59 33 
+			.s-contact__column.s-contact__column_download
+				a.s-contact__download.button-download(href="#")
+					img.button-download__icon(src="images/download.png")
+					.button-download__title Скачать схему монтажа
+				a.s-contact__download.button-download(href="#")
+					img.button-download__icon(src="images/download.png")
+					.button-download__title Скачать доборные элементы
+	iframe.s-contact__map.lazy.spinner(data-src="https://snazzymaps.com/embed/67112" width="100%" height="600px")
+

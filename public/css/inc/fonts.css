@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Intro cond black free';
+  src: url("../fonts/intro-cond.black-free.woff2") format('woff2'), url("../fonts/intro-cond.black-free.woff") format('woff');
+  font-weight: 900;
+  font-style: normal;
+}

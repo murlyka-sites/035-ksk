@@ -1,0 +1,118 @@
+.fancybox-slide--html {
+	padding 4px !important
+	font-size 0
+}
+
+.popup-order {
+	padding 30px !important
+	width 320px !important
+	max-width 100%
+	margin 0 !important
+	
+	@media (min-width 768px) {
+		width 430px !important
+		padding 60px !important
+	}
+
+	&__title {
+		margin 15px 0 60px
+		color #373737
+		font-family "Roboto Slab"
+		font-size 18px
+		font-weight 700 
+		text-align center
+	}
+	
+	&__field {
+		display block
+		width 100%
+		height 63px
+		margin-bottom 20px 
+		color #373737
+		font-family "Roboto Slab"
+		font-size 18px
+		font-weight 400
+		text-align center
+		border 1px solid #888888
+		outline none
+		
+		&:invalid {
+			box-shadow none
+		}
+		
+		&.focus:not(:focus):invalid {
+			box-shadow none
+			border-color red
+		}
+		
+		&.focus:valid {
+			border-color green
+		}
+		
+		&.focus:focus,
+		&:focus {
+			border-color darken(#47b8f2, 10%)
+		}
+		
+	}
+	
+	&__or {
+		margin 0 0 20px
+		text-align center
+		color #6d6d6d
+		font-family "Roboto Slab"
+		font-size 14px
+		font-weight 400
+	}
+	
+	&__message {
+		text-align center		
+		color red
+		
+		&_open {
+			font-size 14px 
+		}
+	}
+	
+	&__button {
+		display block
+		width 100%
+		height 63px
+		margin-top 30px
+		text-align center
+		color #ffffff
+		font-family "Roboto Slab"
+		font-size 18px
+		font-weight 400
+		background #47b8f2
+		border none 
+		
+		&:active {
+			background lighten(#47b8f2, 10%)
+		}
+	}
+	
+	
+
+}
+
+.popup-success {
+	padding 30px !important
+	width 320px !important
+	max-width 100%
+	margin 0 !important
+	
+	@media (min-width 768px) {
+		width 430px !important
+		padding 60px !important
+	}
+
+	&__title {
+		margin 0 !important
+		color #373737
+		font-family "Roboto Slab"
+		font-size 18px
+		font-weight 700 
+		text-align center
+	}
+}

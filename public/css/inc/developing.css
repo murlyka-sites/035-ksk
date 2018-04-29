@@ -1,0 +1,37 @@
+.s-developing {
+  position: relative;
+  padding: 40px 0;
+}
+.s-developing__container {
+  position: relative;
+}
+.s-developing__title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .s-developing__title {
+    text-align: left;
+  }
+}
+.s-developing__frame {
+margin-top
+  display: block;
+  width: 100%;
+  margin: auto;
+  height: 360px;
+}
+@media (min-width: 768px) {
+  .s-developing__frame {
+    height: 480px;
+  }
+}
+@media (min-width: 992px) {
+  .s-developing__frame {
+    height: 610px;
+  }
+}

@@ -1,0 +1,303 @@
+.s-contact {
+	padding 40px 0 0
+	
+	
+	&__title {
+		margin-bottom 40px 
+		
+		@media (min-width 1600px) {
+			margin-bottom 82px 	
+		}
+	}
+	
+	&__slogan {
+		margin-bottom 20px 
+		font-size 20px
+		font-weight 700 
+		
+		@media (min-width 1000px) {
+			margin-bottom 30px 
+			font-size 30px
+		}
+		
+		@media (min-width 1600px) {
+			margin-bottom 61px
+		}
+	}
+	
+	&__grid {
+		
+		@media (min-width 1000px) {
+			display flex
+			justify-content space-between
+		}
+	}
+	
+	&__form {
+		margin-bottom 20px
+		
+		@media (min-width 1000px) {
+			margin-bottom -145px 
+		}
+	}
+	
+	&__subgrid {
+		display flex
+		flex-direction column-reverse
+		
+		@media (min-width 1600px) {
+			flex-direction row
+		}
+	}
+	
+	&__column {
+		&_download {
+			display block
+			
+			@media (min-width 600px) {
+				display flex
+				justify-content space-around
+			}
+			
+			@media (min-width 1000px) {
+				display block
+				width 415px 
+				padding-top 15px 
+			}
+			
+			@media (min-width 1600px) {
+				padding-top 15px
+			}
+		}
+	}
+	
+	&__cell {
+		&_form {
+			flex none
+			
+			
+			@media (min-width 1000px) {
+				width 450px
+			}
+			
+			@media (min-width 1200px) {
+				width 600px
+			}
+			
+			@media (min-width 1600px) {
+				width 660px	
+			}
+		}
+		
+		&_address {
+			width 100%
+			margin-bottom 20px
+			
+			@media (min-width 480px) {
+				display flex
+				width 100%
+			}
+			
+			@media (min-width 1600px) {
+				display block
+				margin-left 60px
+				margin-bottom 0 
+				width 200px
+			}
+		}
+	}
+	
+	&__contact {
+		width 200px 
+		margin-right 40px 
+	}
+	
+	&__download {
+		width 100%
+		margin-bottom 15px
+		
+		@media (min-width 600px) {
+			width 45%
+			margin-bottom 25px
+			
+		}
+		
+		@media (min-width 1000px) {
+			width 100%
+		}
+		
+		@media (min-width 1200px) {
+			margin-bottom 35px 
+		}
+	}
+	
+	&__map {
+		display block
+		border none
+	}
+}
+
+.form-contact {
+	padding 20px 30px 20px 20px
+	position relative
+	background #dddddd
+	box-shadow -7px 4px 21px 2px rgba(0, 0, 0, 0.43)
+	
+	@media (min-width 600px) {
+		padding 40px 60px 40px 40px
+		box-shadow -14px 9px 42px 4px rgba(0, 0, 0, 0.43)
+	}
+	
+	@media (min-width 1200px) {
+		padding 85px 110px 50px 48px
+	}
+	
+	&__body {
+		padding-bottom 20px 
+		
+		@media (min-width 600px) {
+			display flex
+			flex-wrap wrap
+			margin 0 -20px 25px
+		}
+		
+		@media (min-width 1200px) {
+			margin 0 -38px 25px
+		}
+	}
+	
+	&__cell {
+		width 100%
+		margin 0 0 15px
+		
+		@media (min-width 600px) {
+			padding 0 20px
+			width 50%
+			margin 0 0 30px
+		}
+		
+		@media (min-width 1200px) {
+			padding 0 38px
+			margin 0 0 40px
+		}
+	}
+	
+	&::after {
+		content ''
+		position absolute
+		top 0
+		right 0
+		width 10px 
+		height 100%
+		background-color #47b8f2
+		background-image linear-gradient(-173deg, #47b8f2 0%, #172332 100%)
+		
+		@media (min-width 600px) {
+			width 20px 
+		}
+		
+		@media (min-width 1200px) {
+			width 30px
+		}
+	} 
+	
+	&__button {
+		width 100%
+	}
+}
+
+.contact {
+	margin-bottom 10px 
+	
+	&__label {
+		margin-bottom 5px
+		font-size 20px
+		font-weight 700
+		
+		@media (min-width 1000px) {
+			margin-bottom 10px
+			font-size 30px
+		}
+	}
+	
+	&__value {
+		font-size 16px
+	}
+}
+
+.field {
+	display block
+	width 100%
+	background transparent 
+	border none
+	border-bottom 2px solid #7e7d7d
+	height 40px 
+	font-size 16px 
+	font-family "Roboto Slab"
+	
+	outline none
+	
+	&.focus:not(:focus):invalid {
+		box-shadow none
+		border-color red
+	}
+	
+	&.focus:valid {
+		border-color green
+	}
+	
+	&.focus:focus,
+	&:focus {
+		border-color darken(#47b8f2, 10%)
+	}
+	
+}
+
+.button-contact {
+	display inline-block
+	height 50px
+	box-shadow -25px 15px 51px 6px rgba(7, 103, 152, 0.47)
+	background-color #47b8f2
+	font-size 16px
+	font-family "Roboto Slab" 
+	border none
+	
+	@media (min-width 600px) {
+		height 83px
+	}
+	
+	&:active {
+		background-color lighten(#47b8f2, 10%)
+	}
+}
+
+.button-download {
+	display inline-flex
+	justify-content center
+	align-items center
+	font-size 14px 
+	padding 15px
+	background #696969 
+	text-decoration none
+	color #ffffff
+	text-align center
+	
+	@media (min-width 1000px) {
+		padding 30px
+		font-size 16px 
+	}
+	
+	&__icon {
+		margin-right 10px 
+		
+		@media (min-width 1000px) {
+			margin-right 24px 
+		}
+	}
+}
+
+.spinner {
+	
+	background url(../images/spinner.svg) center  
+	background-repeat no-repeat
+}

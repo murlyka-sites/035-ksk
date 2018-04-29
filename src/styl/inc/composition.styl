@@ -1,0 +1,83 @@
+.s-composition {
+	&__title {
+		margin-bottom 22px 
+		color white
+	}
+	
+	&__grid {	
+		@media (min-width 1000px) {
+			display flex
+			padding-bottom 10% 
+		}
+	}
+	
+	&__column {
+		&_main {
+			padding 25px 25px
+			background-image linear-gradient(-173deg, #47b8f2 0%, #172332 100%)
+			
+			@media (min-width 1000px) {
+				width 66% 
+				padding 35px 40px
+			}
+			
+			@media (min-width 1600px) {
+				padding 35px 90px
+			}
+		}
+		
+		&_desc {
+			display flex
+			align-items center
+			justify-content center
+			background url(../images/composition/bg.jpg) center center / cover
+			padding 25px
+			
+			@media (min-width 1000px) {
+				width 34% 
+			}
+			
+			@media (min-width 1200px) {
+				padding 25px 50px
+			}
+			
+			@media (min-width 1600px) {
+				padding 50px 80px
+			}
+
+			@media (min-width 1920px) {
+				padding 50px 125px
+			}
+		}
+	}
+	
+	&__desc {
+		text-align justify
+		font-size 14px 
+		font-weight 700 
+		line-height 1.9
+		color white
+		
+		@media (min-width 1000px) {
+			font-size 16px 
+		}
+	}
+	
+	&__composition {
+		@media (min-width 1000px) {
+			margin-bottom -20% 
+		}
+	}
+}
+
+.compositions {
+	&__item {
+		fill #fefefe
+		// cursor pointer
+		
+		// &:hover,
+		// &_active {
+		// 	fill #103f58
+		// }
+	}
+}

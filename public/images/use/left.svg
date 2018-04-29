@@ -1,0 +1,316 @@
+<svg  version="1.1"
+  viewBox="0 0 513 513"
+  width="513" height="513"
+  baseProfile="full"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:ev="http://www.w3.org/2001/xml-events">
+	
+	
+	<defs>
+		<symbol id="tile" viewBox="0 0 20 30">
+			<image width="20" height="30" href="images/tile.png" ></image>
+		</symbol>
+
+		<symbol id="bg" viewBox="0 0 513 513">
+			<image width="513" height="513" href="images/1.jpg"></image>
+		</symbol>
+
+		<clipPath id="clip">
+			<path d="M 119 152 119 278 125 273 144 320 151 319 151 195 257 178 258 278 295 247 295 116 295 0 119 0" fill="black"></path>
+		</clipPath>
+
+		<clipPath id="clip-2">
+			<path d="M 119 152 119 278 125 273 144 320 151 319 151 195 257 178 258 278 295 247 295 116" fill="black"></path>
+		</clipPath>
+	</defs>
+	<!-- <image width="513" height="513" href="1.jpg"></image> -->
+
+	<use href="#bg" ></use>	
+	<path d="M 119 152 119 278 125 273 144 320 151 319 151 195 257 178 258 278 295 247 295 116 295 0 119 0" fill="black"></path>
+<!-- <g>
+ --><!-- 	<use href="#tile" width="20" height="30" x="111" y="137"></use>
+	<use href="#tile" width="20" height="30" x="122" y="151"></use>
+	<use href="#tile" width="20" height="30" x="133" y="165"></use>
+
+	<use href="#tile" width="20" height="30" x="132" y="137"></use>
+	<use href="#tile" width="20" height="30" x="143" y="151"></use>
+	<use href="#tile" width="20" height="30" x="154" y="165"></use>
+
+	<use href="#tile" width="20" height="30" x="153" y="137"></use>
+	<use href="#tile" width="20" height="30" x="164" y="151"></use>
+	<use href="#tile" width="20" height="30" x="175" y="165"></use>
+</g> -->
+	
+	<style>
+		use[href="#tile"] {
+			opacity: 0;
+		}
+
+		.animation .row1 use {
+			opacity: 1;
+			transform: translate(0, -184px);
+			<!-- animation: row1 1s forwards infinite; -->
+
+		}
+
+		@keyframes row1{
+			from {
+				transform: translate(0, -250px);
+				opacity: 1;
+			}
+
+			to {
+				transform: translate(0, 0);
+				opacity: 1;
+			}
+		}
+	</style>
+	
+	<g class="animation">
+		<g clip-path="url(#clip)" y="0">
+			<g class="row1">
+				<use href="#tile" width="20" height="30" x="131.5" y="287"></use>
+			</g>
+				
+			<g>
+				<use href="#tile" width="20" height="30" x="104" y="275"></use>
+				<use href="#tile" width="20" height="30" x="122" y="272"></use>
+				<use href="#tile" width="20" height="30" x="140" y="269"></use>
+				<!--  -->
+				<use href="#tile" width="20" height="30" x="248" y="251"></use>
+				<use href="#tile" width="20" height="30" x="266" y="248"></use>
+				<use href="#tile" width="20" height="30" x="284" y="245"></use>
+			</g>
+
+			<use href="#tile" width="20" height="30" x="113.5" y="260"></use>
+			<use href="#tile" width="20" height="30" x="131.5" y="257"></use>
+			<!--  -->
+			<use href="#tile" width="20" height="30" x="257.5" y="236"></use>
+			<use href="#tile" width="20" height="30" x="275.5" y="233"></use>
+			
+			<use href="#tile" width="20" height="30" x="104" y="245"></use>
+			<use href="#tile" width="20" height="30" x="122" y="242"></use>
+			<use href="#tile" width="20" height="30" x="140" y="239"></use>
+			<!--  -->
+			<use href="#tile" width="20" height="30" x="248" y="221"></use>
+			<use href="#tile" width="20" height="30" x="266" y="218"></use>
+			<use href="#tile" width="20" height="30" x="284" y="215"></use>
+			
+
+			<use href="#tile" width="20" height="30" x="113.5" y="230"></use>
+			<use href="#tile" width="20" height="30" x="131.5" y="227"></use>
+			<!--  -->
+			<use href="#tile" width="20" height="30" x="257.5" y="206"></use>
+			<use href="#tile" width="20" height="30" x="275.5" y="203"></use>
+
+
+			<use href="#tile" width="20" height="30" x="104" y="215"></use>
+			<use href="#tile" width="20" height="30" x="122" y="212"></use>
+			<use href="#tile" width="20" height="30" x="140" y="209"></use>
+			<!--  -->
+			<use href="#tile" width="20" height="30" x="248" y="191"></use>
+			<use href="#tile" width="20" height="30" x="266" y="188"></use>
+			<use href="#tile" width="20" height="30" x="284" y="185"></use>
+			
+			<use href="#tile" width="20" height="30" x="113.5" y="200"></use>
+			<use href="#tile" width="20" height="30" x="131.5" y="197"></use>
+			<!--  -->
+			<use href="#tile" width="20" height="30" x="257.5" y="176"></use>
+			<use href="#tile" width="20" height="30" x="275.5" y="173"></use>
+
+			<use href="#tile" width="20" height="30" x="104" y="185"></use>
+			<use href="#tile" width="20" height="30" x="122" y="182"></use>
+			<use href="#tile" width="20" height="30" x="140" y="179"></use>
+			<use href="#tile" width="20" height="30" x="158" y="176"></use>
+			<use href="#tile" width="20" height="30" x="176" y="173"></use>
+			<use href="#tile" width="20" height="30" x="194" y="170"></use>
+			<use href="#tile" width="20" height="30" x="212" y="167"></use>
+			<use href="#tile" width="20" height="30" x="230" y="164"></use>
+			<use href="#tile" width="20" height="30" x="248" y="161"></use>
+			<use href="#tile" width="20" height="30" x="266" y="158"></use>
+			<use href="#tile" width="20" height="30" x="284" y="155"></use>
+
+			<use href="#tile" width="20" height="30" x="113.5" y="170"></use>
+			<use href="#tile" width="20" height="30" x="131.5" y="167"></use>
+			<use href="#tile" width="20" height="30" x="149.5" y="164"></use>
+			<use href="#tile" width="20" height="30" x="167.5" y="161"></use>
+			<use href="#tile" width="20" height="30" x="185.5" y="158"></use>
+			<use href="#tile" width="20" height="30" x="203.5" y="155"></use>
+			<use href="#tile" width="20" height="30" x="221.5" y="152"></use>
+			<use href="#tile" width="20" height="30" x="239.5" y="149"></use>
+			<use href="#tile" width="20" height="30" x="257.5" y="146"></use>
+			<use href="#tile" width="20" height="30" x="275.5" y="143"></use>
+
+			<use href="#tile" width="20" height="30" x="103" y="155"></use>
+			<use href="#tile" width="20" height="30" x="121" y="152"></use>
+			<use href="#tile" width="20" height="30" x="139" y="149"></use>
+			<use href="#tile" width="20" height="30" x="157" y="146"></use>
+			<use href="#tile" width="20" height="30" x="175" y="143"></use>
+			<use href="#tile" width="20" height="30" x="193" y="140"></use>
+			<use href="#tile" width="20" height="30" x="211" y="137"></use>
+			<use href="#tile" width="20" height="30" x="229" y="134"></use>
+			<use href="#tile" width="20" height="30" x="247" y="131"></use>
+			<use href="#tile" width="20" height="30" x="265" y="128"></use>
+			<use href="#tile" width="20" height="30" x="283" y="125"></use>
+		</g>
+	</g>
+
+	<g clip-path="url(#clip-2)">
+		<use href="#tile" width="20" height="30" x="111" y="137"></use>
+		<use href="#tile" width="20" height="30" x="129" y="134"></use>
+		<use href="#tile" width="20" height="30" x="147" y="131"></use>
+		<use href="#tile" width="20" height="30" x="165" y="128"></use>
+		<use href="#tile" width="20" height="30" x="183" y="125"></use>
+		<use href="#tile" width="20" height="30" x="201" y="122"></use>
+		<use href="#tile" width="20" height="30" x="219" y="119"></use>
+		<use href="#tile" width="20" height="30" x="237" y="116"></use>
+		<use href="#tile" width="20" height="30" x="255" y="113"></use>
+		<use href="#tile" width="20" height="30" x="273" y="110"></use>
+	</g>
+	<!-- <g clip-path="url(#clip)">
+		<use href="#tile" transform="translate(181, 324)"></use>
+
+		<use href="#tile" transform="translate(151, 309)"></use>
+		<use href="#tile" transform="translate(171, 309)"></use>
+		<use href="#tile" transform="translate(191, 309)"></use>
+
+		<use href="#tile" transform="translate(161, 294)"></use>
+		<use href="#tile" transform="translate(181, 294)"></use>
+		<use href="#tile" transform="translate(311, 294)"></use>
+
+		<use href="#tile" transform="translate(171, 279)"></use>
+		<use href="#tile" transform="translate(191, 279)"></use>
+		<use href="#tile" transform="translate(291, 279)"></use>
+		<use href="#tile" transform="translate(311, 279)"></use>
+
+		<use href="#tile" transform="translate(161, 264)"></use>
+		<use href="#tile" transform="translate(181, 264)"></use>
+
+		<use href="#tile" transform="translate(301, 264)"></use>
+		<use href="#tile" transform="translate(321, 264)"></use>
+
+		<use href="#tile" transform="translate(171, 249)"></use>
+		<use href="#tile" transform="translate(191, 249)"></use>
+		<use href="#tile" transform="translate(291, 249)"></use>
+		<use href="#tile" transform="translate(311, 249)"></use>
+		<use href="#tile" transform="translate(331, 249)"></use>
+		
+		<use href="#tile" transform="translate(161, 234)"></use>
+		<use href="#tile" transform="translate(181, 234)"></use>
+		<use href="#tile" transform="translate(301, 234)"></use>
+		<use href="#tile" transform="translate(321, 234)"></use>
+
+		<use href="#tile" transform="translate(171, 219)"></use>
+		<use href="#tile" transform="translate(191, 219)"></use>
+		<use href="#tile" transform="translate(291, 219)"></use>
+		<use href="#tile" transform="translate(311, 219)"></use>
+		<use href="#tile" transform="translate(331, 219)"></use>
+
+		<use href="#tile" transform="translate(161, 204)"></use>
+		<use href="#tile" transform="translate(181, 204)"></use>
+		<use href="#tile" transform="translate(201, 204)"></use>
+		
+	
+		
+		<use href="#tile" transform="translate(301, 204)"></use>
+		<use href="#tile" transform="translate(321, 204)"></use>
+
+		<use href="#tile" transform="translate(171, 189)"></use>
+		<use href="#tile" transform="translate(191, 189)"></use>
+		<use href="#tile" transform="translate(211, 189)"></use>
+		<use href="#tile" transform="translate(311, 189)"></use>
+		<use href="#tile" transform="translate(331, 189)"></use>
+
+
+		<use href="#tile" transform="translate(161, 174)"></use>
+		<use href="#tile" transform="translate(181, 174)"></use>
+		<use href="#tile" transform="translate(201, 174)"></use>
+
+		<use href="#tile" transform="translate(301, 174)"></use>
+		<use href="#tile" transform="translate(321, 174)"></use>
+
+		<use href="#tile" transform="translate(171, 159)"></use>
+		<use href="#tile" transform="translate(191, 159)"></use>
+		<use href="#tile" transform="translate(211, 159)"></use>
+		<use href="#tile" transform="translate(231, 159)"></use>
+		<use href="#tile" transform="translate(251, 159)"></use>
+		<use href="#tile" transform="translate(271, 159)"></use>
+		<use href="#tile" transform="translate(291, 159)"></use>
+		<use href="#tile" transform="translate(311, 159)"></use>
+		<use href="#tile" transform="translate(331, 159)"></use>
+
+		<use href="#tile" transform="translate(221, 144)"></use>
+		<use href="#tile" transform="translate(241, 144)"></use>
+		<use href="#tile" transform="translate(261, 144)"></use>
+		<use href="#tile" transform="translate(281, 144)"></use>
+		<use href="#tile" transform="translate(301, 144)"></use>
+		<use href="#tile" transform="translate(321, 144)"></use>
+	</g>
+		
+	<g id="tile-1" clip-path="url(#clip)">
+		<use href="#tile" transform="translate(221, 204)"></use>	
+		<animateTransform attributeName="transform"  type="translate" from="0 -234" to="0 0" dur="0.8s" fill="freeze" d="a-tile-1"/>	
+	</g>
+
+	<g id="tile-2" clip-path="url(#clip)" transform="translate(0 -234)">
+		<use href="#tile" transform="translate(241, 204)"></use>
+		<animateTransform attributeName="transform" begin="0.4s" type="translate" from="0 -234" to="0 0" dur="0.8s" fill="freeze"/>
+	</g>
+	
+
+	<g id="tile-3" clip-path="url(#clip)" transform="translate(0 -234)">
+		<use href="#tile" transform="translate(261, 204)"></use>
+		<animateTransform  attributeName="transform" begin="0.8s" type="translate" from="0 -234" to="0 0" dur="0.8s" fill="freeze"/>
+	</g>
+
+	<g id="tile-4" clip-path="url(#clip)" transform="translate(0 -234)">
+		<use href="#tile" transform="translate(281, 204)"></use>
+		<animateTransform  attributeName="transform" begin="1.2s" type="translate" from="0 -234" to="0 0" dur="0.8s" fill="freeze"/>
+	</g>
+	
+
+	<g id="tile-5" clip-path="url(#clip)" transform="translate(0 -219)">
+		<use href="#tile" transform="translate(231, 189)"></use>
+		<animateTransform  attributeName="transform" begin="1.6s" type="translate" from="0 -219" to="0 0" dur="0.8s" fill="freeze"/>
+	</g>
+
+	<g id="tile-6" clip-path="url(#clip)" transform="translate(0 -219)">
+		<use href="#tile" transform="translate(251, 189)"></use>
+		<animateTransform  attributeName="transform" begin="2s" type="translate" from="0 -219" to="0 0" dur="0.8s" fill="freeze"/>
+	</g>
+
+	<g id="tile-7" clip-path="url(#clip)" transform="translate(0 -219)">
+		<use href="#tile" transform="translate(271, 189)"></use>
+		<animateTransform  attributeName="transform" begin="2.4s" type="translate" from="0 -219" to="0 0" dur="0.8s" fill="freeze"/>
+	</g>
+
+	<g id="tile-8" clip-path="url(#clip)" transform="translate(0 -219)">
+		<use href="#tile" transform="translate(291, 189)"></use>
+		<animateTransform  attributeName="transform" begin="2.8s" type="translate" from="0 -219" to="0 0" dur="0.8s" fill="freeze"/>
+	</g>
+
+	<g id="tile-10" clip-path="url(#clip)" transform="translate(0 -204)">
+		<use href="#tile" transform="translate(221, 174)"></use>
+		<animateTransform  attributeName="transform" begin="3.2s" type="translate" from="0 -204" to="0 0" dur="0.8s" fill="freeze"/>
+	</g>
+
+	<g id="tile-11" clip-path="url(#clip)" transform="translate(0 -204)">
+		<use href="#tile" transform="translate(241, 174)"></use>
+		<animateTransform  attributeName="transform" begin="3.6s" type="translate" from="0 -204" to="0 0" dur="0.8s" fill="freeze"/>
+	</g>
+
+	<g id="tile-12" clip-path="url(#clip)" transform="translate(0 -204)">
+		<use href="#tile" transform="translate(261, 174)"></use>
+		<animateTransform  attributeName="transform" begin="4s" type="translate" from="0 -204" to="0 0" dur="0.8s" fill="freeze"/>
+	</g>
+
+	<g id="tile-13" clip-path="url(#clip)" transform="translate(0 -204)">
+		<use href="#tile" transform="translate(281, 174)"></use>
+		<animateTransform  attributeName="transform" begin="4.4s" type="translate" from="0 -204" to="0 0" dur="0.8s" fill="freeze"/>
+	</g>
+
+	<clipPath id="clip">
+		<path d="M 170 190 341 154 341 280 304 310 304 213 200 230 200 350 190 351 176 307 169 312" fill="blacke"></path>
+	</clipPath> -->
+</svg>

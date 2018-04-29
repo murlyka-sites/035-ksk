@@ -1,0 +1,31 @@
+:root {
+	--x 150px
+	--y 150px
+}
+
+@keyframes pile {
+	
+	from {
+		transform translate(-50px, -50px)
+	}
+	
+	50% {
+		transform translate(75px, 75px)
+	}
+	
+	to {
+		transform translate(var(--x), var(--y))
+	}
+}
+
+.animate .use-right__item {
+	--duration 1s
+	--delay 0s
+	
+	
+	transform translate(-50px, -50px)
+	// transform translate(var(--x), var(--y))
+	animation pile var(--duration) var(--delay) forwards 	
+	// animation pile 2s forwards	
+		
+}

@@ -1,0 +1,146 @@
+.s-features {
+	padding 20px 0
+	
+	@media (min-width 600px) {
+		padding 40px 0
+	}
+	
+	@media (min-width 1600px) {
+		padding 40px 0 80px
+	}
+	
+	&__title {
+		margin-bottom 25px
+		
+		@media (min-width 600px) {
+			margin-bottom 50px
+		}
+		
+		@media (min-width 1000px) {
+			margin-bottom 80px
+		}
+		
+		@media (min-width 1600px) {
+			margin-bottom 120px
+		}
+		
+		@media (min-width 1920px) {
+			margin-bottom 150px
+		}
+	}
+	
+	&__grid {
+		display flex
+		flex-wrap wrap
+		align-items stretch
+		justify-content flex-start
+		margin 0 -7.5px
+		
+		@media (min-width 600px) {
+			margin 0 -12.5px
+		}
+		
+		@media (min-width 1200px) {
+			margin 0 -22.5px
+		}		
+	}
+	
+	&__cell {
+		width 100%
+		flex none
+		padding 7.5px 7.5px
+		
+		&:first-child {
+			width 100%
+			
+			@media (min-width 600px) {
+				width 50%
+			}
+			
+			@media (min-width 1200px) {
+				width 33.333%
+			}
+		}
+		
+		@media (min-width 600px) {
+			width 50%
+			padding 12.5px 12.5px
+		}
+
+		@media (min-width 1200px) {
+			width 33.333%
+		}
+		
+		@media (min-width 1600px) {
+			padding 17.5px 22.5px
+		}
+	}
+}
+
+.c-feature {
+	height 100%
+	width 100%
+	background #dcdcdc
+	padding 10px 10px 10px
+	color #2f2e2e
+	
+	@media (min-width 600px) {
+		padding 15px 15px 15px
+	}
+	
+	@media (min-width 1000px) {
+		padding 25px 25px 25px
+	}
+	
+	@media (min-width 1600px) {
+		padding 35px 35px 30px
+	}
+	
+	&__header {
+		display flex
+		align-items center
+		margin-bottom 5px
+		height 80px
+		line-height 0
+		
+	}
+	
+	&__icon {
+		max-height 100%
+		width auto
+	}
+	
+	&__title {
+		margin-bottom 7px 
+		font-size 25px 
+		font-weight 700
+		
+		@media (min-width 1600px) {
+			font-size 30px 
+		}
+	}
+	
+	&__desc {
+		font-size 12px
+		font-weight 700 
+		line-height 2 
+		
+		@media (min-width 1600px) {
+			font-size 16px
+		}
+	}
+}
+
+.c-feature-dark {
+	background #2F2E2E 
+	height 100%
+	padding 20px 
+	display flex
+	align-items center
+	justify-content center
+	
+	&__image {
+		max-width 100%
+		height auto
+	}
+}

@@ -1,0 +1,26 @@
+.s-video
+	.container
+		h2.title-2.s-video__title Смотреть видео
+		.s-video__slider: .swiper-container.video-swiper
+			.swiper-wrapper: each i in [{id: 'G0o1GwUuw-I'}, {id: 'miYeIifWGQA'}, {id: 'dHvLi3w6K3s'}]
+				.swiper-slide
+					.c-video
+						.video-wrapper.youtube(style="background-image: url(https://img.youtube.com/vi/"+i.id+"/maxresdefault.jpg)" data-src="https://www.youtube.com/embed/" + i.id + "?autoplay=1")
+							//- .video-wrapper__frame(width="560" height="315" data-video-id=i.id frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+							//- iframe.video-wrapper__frame( width="560" height="315" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen  )
+							svg.youtube__play(xmlns="http://www.w3.org/2000/svg" width="68" height="48" version="1.1" viewBox="0 0 68 48")
+								path(class="ytp-large-play-button-bg" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="red" fill-opacity="0.8")
+								path(d="M 45,24 27,14 27,34" fill="#fff")
+
+						//- img.c-video__pr(src="images/video/1.jpg" width="1600" height="896")
+			
+		.video-swiper__nav.swiper-nav-hor
+			.video-swiper__prev.swiper-nav-hor__button
+				svg.swiper-nav-hor__icon(width="21" height="39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 21 39" style="enable-background:new 0 0 21 39;" xml:space="preserve")
+					path(d="M19,39c-0.5,0-1-0.2-1.4-0.6l-17-17.5c-0.8-0.8-0.8-2,0-2.8l17-17.5c0.8-0.8,2-0.8,2.8,0c0.8,0.8,0.8,2,0,2.8 L4.8,19.5l15.6,16.1c0.8,0.8,0.8,2.1,0,2.8C20,38.8,19.5,39,19,39z")
+			.video-swiper__pagination.swiper-nav-hor__pagination
+			.video-swiper__next.swiper-nav-hor__button
+				svg.swiper-nav-hor__icon(width="21" height="39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 21 39" style="enable-background:new 0 0 21 39;" xml:space="preserve")
+					path(d="M2,39c-0.5,0-1-0.2-1.4-0.6c-0.8-0.8-0.8-2,0-2.8l15.6-16.1L0.6,3.4c-0.8-0.8-0.8-2.1,0-2.8 c0.8-0.8,2.1-0.8,2.8,0l17,17.5c0.8,0.8,0.8,2,0,2.8l-17,17.5C3,38.8,2.5,39,2,39z")
+
+

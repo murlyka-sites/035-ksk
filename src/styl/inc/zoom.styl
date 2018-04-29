@@ -1,0 +1,132 @@
+.s-zoom {
+	padding 25px 0
+	
+	@media (min-width 1000px) {
+		padding 70px 0
+	}
+	
+	&__tabs {
+		display flex
+		align-items center
+		justify-content center
+		padding 0
+		margin 0 0 25px
+		list-style-type none
+		font-size 18px
+		
+		@media (min-width 1000px) {
+			font-size 25px 
+			margin 0 0 40px
+		}
+		
+		@media (min-width 1600px) {
+			margin 0 0 70px
+			font-size 30px
+		}
+		
+		@media (min-width 1920px) {
+			margin 0 0 110px
+		}
+	}
+	
+	&__tab {
+		margin-right 25px 
+		border-bottom 2px solid transparent
+		cursor pointer
+		
+		@media (min-width 1000px) {
+			margin-right 45px 
+		}
+		
+		@media (min-width 1200px) {
+			margin-right 85px
+		}		
+		
+		@media (min-width 1920px) {
+			margin-right 110px 
+		}
+		
+		&_active {
+			font-weight 700 
+			border-color #47b8f2
+			cursor default
+		}
+		
+		&:last-child {
+			margin-right 0
+		}
+	}
+	
+	&__grid {
+		align-items center
+		width 100%
+		margin-bottom 25px 
+		max-width 100%
+		overflow hidden
+		
+		
+		@media (min-width 768px) {
+			display grid
+			grid-template-columns 60.5% 32%
+			justify-content space-between
+			// grid-gap 1.5%
+		}
+		
+		@media (min-width 1000px) {
+			margin-bottom 45px 
+		}
+		
+		@media (min-width 1600px) {
+			margin-bottom 60px 
+		}
+	}
+	
+	&__column {
+		&_pr {
+			// max-width 960px
+		}
+		
+		&_zoom {
+			display none
+			
+			@media (min-width 768px) {
+				display block
+			}
+		}
+	}
+	
+	&__pr {
+		width 100%
+		height auto
+		display block
+	}
+	
+	&__zoom {
+		width 100%
+		background-color white
+		border-radius 50%
+		overflow hidden
+		
+		&::before {
+			position relative
+			display block
+			content ''
+			height 0
+			width 100%
+			padding-bottom 100% 
+		}
+		
+		img {
+			opacity 1 !important 
+		}
+	}
+}
+
+.zoomWindowContainer {
+	overflow hidden
+	border-radius 50%
+	
+	div {
+		border-radius 50% !important
+	}
+}

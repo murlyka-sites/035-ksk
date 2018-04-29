@@ -1,0 +1,401 @@
+.s-header {
+	display flex
+	justify-content space-between
+	
+	&__logo {
+		width 100px
+		height auto
+		
+		@media (min-width 768px) {
+			width 150px
+		}
+		
+		@media (min-width 1200px) {
+			width 250px 
+		}
+		
+		@media (min-width 1600px) {
+			width 402px 
+		}
+		
+		@media (min-width 1920px) {
+			margin-left -43px 
+		}
+	}
+}
+
+.phone-header {
+	display flex
+	font-size 20px
+	font-weight 700 
+	line-height 1
+	
+	@media (min-width 768px) {
+		font-size 30px
+	}
+	
+	@media (min-width 1200px) {
+		font-size 50px
+	}
+	
+	@media (min-width 1600px) {
+		font-size 60px
+	}
+	
+	@media (min-width 1920px) {
+		font-size 70px
+	}
+	
+	&__icon {
+		display block
+		margin-left .3em 
+		margin-top .1em
+		width 25px
+
+		@media (min-width 1600px) {
+			width 35px
+		}
+	}
+}
+
+.s-main {
+	padding 30px 0
+	
+	@media (min-width 768px) {
+		padding 60px 0
+	}
+	
+	@media (min-width 1200px) {
+		min-height 100vh
+	}
+	
+	@media (min-width 1600px) {
+		padding 75px 0
+	}
+	
+	@media (min-width 1920px) {
+		padding 95px 0
+	}
+	
+	&__container {
+		display flex
+		flex-wrap wrap
+		justify-content space-between
+		margin-bottom 30px 
+		
+		@media (min-width 768px) {
+			flex-wrap nowrap
+		}
+		//
+		@media (min-width 1200px) {
+			margin-bottom 50px
+		}
+		
+		@media (min-width 1600px) {
+			margin-bottom 75px 
+		}
+	}
+	
+	&__slider {
+		margin-top 40px
+		
+		@media (min-width 768px) {
+			margin-top 100px
+		}
+		
+		@media (min-width 1000px) {
+			margin-top -20px	
+		}		
+	}
+	
+	&__column {
+		&_main {
+			order 1
+			width 100%
+			margin-top 15px 
+			
+			@media (min-width 768px) {
+				width auto
+				order initial
+				margin-top 0
+			}
+		}
+		
+		&_side {
+			flex none
+			padding-top 5px 
+			
+			@media (min-width 768px) {
+				width 150px
+				padding-top 40px 
+			}
+			
+			@media (min-width 1000px) {
+				padding-top 90px 
+			}
+			
+			@media (min-width 1200px) {
+				width 250px 
+				padding-top 110px 
+			}
+			
+			@media (min-width 1600px) {
+				padding-top 140px
+			}
+			
+			@media (min-width 1920px) {
+				padding-top 180px
+			}
+			
+			&:first-child {
+				text-align left
+			}
+			
+			&:last-child {
+				text-align right
+			}
+		}
+	}
+	
+	&__title {
+		text-align center
+		font-family 'Intro cond black free'
+		font-weight 900 
+		font-size 30px 
+		line-height 1
+		letter-spacing 0.05em 
+		
+		@media (min-width 1000px) {
+			font-size 40px
+		}
+		
+		@media (min-width 1200px) {
+			font-size 45px 
+		}
+		
+		@media (min-width 1600px) {
+			font-size 58px 
+		}
+		
+		@media (min-width 1920px) {
+			font-size 72px
+		}
+	}
+	
+	&__title-2 {
+		text-align center
+		font-family 'Intro cond black free'
+		font-size 60px
+		font-weight 900
+		line-height 1 
+		text-transform uppercase
+		letter-spacing -0.025em
+		
+		@media (min-width 1000px) {
+			font-size 100px
+		}
+		
+		@media (min-width 1200px) {
+			font-size 140px
+		}
+		
+		@media (min-width 1600px) {
+			font-size 160px 
+		}
+		
+		@media (min-width 1920px) {
+			font-size 197px
+		}
+	}
+	
+	&__button {
+		display flex
+		align-items center
+		justify-content center
+		margin auto
+		width 250px 
+		height 55px 
+		padding 10px 
+		border none
+		text-align center
+		color inherit
+		font-weight 700 
+		font-family "Roboto slab" 
+		font-size 20px		
+		background-color #47b8f2
+		cursor pointer
+		user-select none
+		text-decoration none
+		box-shadow -8px 3px 17px 2px rgba(7, 103, 152, 0.47)
+		
+		@media (min-width 768px) {
+			width 280px 
+			height 65px 
+			box-shadow -17px 7px 25px 3px rgba(7, 103, 152, 0.47)
+			margin-bottom 50px 
+		}
+		
+		@media (min-width 1000px) {
+		}
+
+		@media (min-width 1000px) {
+			width 320px 
+			height 75px 
+			margin-bottom 65px 
+			font-size 25px 
+		}
+		
+		@media (min-width 1600px) {
+			width 386px 
+			height 87px 
+			font-size 30px 
+			box-shadow -25px 15px 51px 6px rgba(7, 103, 152, 0.47)
+		}
+		
+		&:active {
+			background lighten(#47b8f2, 20%)
+		}
+	}
+	
+	&__more {
+		padding-top 20px 
+		text-align right
+	}
+}
+
+.main-side {
+	font-weight 700
+	line-height 1 
+	 
+	&__label {
+		margin-bottom 10px 
+		font-size 15px 
+		
+		@media (min-width 1200px) {
+			margin-bottom 15px 
+			font-size 20px 
+		}
+		
+		@media (min-width 1600px) {
+			margin-bottom 20px 
+			font-size 25px
+		}
+		
+		@media (min-width 1920px) {
+			margin-bottom 25px 
+			font-size 30px 
+		}
+	}
+	
+	&__value {
+		font-size 30px
+		
+		@media (min-width 1200px) {
+			font-size 50px
+		}
+		
+		@media (min-width 1600px) {
+			font-size 60px
+		}
+		
+		@media (min-width 1920px) {
+			font-size 70px 
+		}
+	}
+	
+	&__count {
+		font-size 15px 
+		
+		@media (min-width 1200px) {
+			font-size 20px
+		}
+		
+		@media (min-width 1600px) {
+			font-size 25px 
+		}
+		
+		@media (min-width 1920px) { 
+			font-size 30px 
+		}
+	}
+}
+
+.main-more {
+	display inline-flex
+	justify-content flex-end
+	align-items center
+	color $color-dark
+	text-decoration none
+	
+	&__title {
+		margin-right 15px 
+		font-size 20px 
+		font-weight 700 
+		
+		@media (min-width 1600px) {
+			font-size 24px
+		}
+	}
+	
+	&__icon {
+		fill currentColor
+		width 25px
+		
+		@media (min-width 1600px) {
+			width 32px 
+		}
+	}
+}
+
+.main-swiper {
+	&__pagination {
+		position absolute
+		bottom 0 
+		left 0
+		right auto
+		width 16px !important
+		z-index 10		 
+		display flex
+		flex-direction column
+		padding 2px 
+		
+		.swiper-pagination-bullet {
+			position relative
+			width 12px 
+			height 12px
+			margin 3px 0 !important
+			background transparent
+			opacity 1
+			
+			
+			&::before {
+				content ''
+				position absolute
+				top 0
+				left 0
+				right 0
+				bottom 0  
+				border 2px solid #2f2e2e
+				border-radius 50%
+			}
+			
+			
+			&-active {
+				border-color #47b8f2
+				
+				&::before {
+					top -2px
+					left -2px
+					right -2px
+					bottom -2px
+					
+					border-color #47b8f2
+				}
+			}
+		}
+	}
+}
+
+.hidden {
+	display none
+}

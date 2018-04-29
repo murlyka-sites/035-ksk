@@ -1,0 +1,36 @@
+.s-main
+	.container
+		header.s-header
+			div: img.s-header__logo(src="images/logo.png" width="402" height="188")
+			.s-header__phone.phone-header
+				.phone-header__text 8 800 775 59 33
+				svg.phone-header__icon(width="35" height="18" viewbox="0 0 35 18")
+					path(d="M 0 0 35 0 35 2 0 2 z M 35 8 35 10 11 10 11 8 Z M 35 16 35 18 20 18 20 16 Z")
+	
+		.s-main__slider: .swiper-container.main-swiper
+			.swiper-wrapper: each i in [1,2,3,4]
+				.swiper-slide
+					.s-main__container
+						.s-main__column.s-main__column_side
+							.main-side
+								.main-side__label небольшой вес
+								.main-side__value 355 г
+								.main-side__count 1 шт.
+						.s-main__column.s-main__column_main
+							.s-main__title Классическая
+								br
+								| штучная объемная 
+							.s-main__title-2 черепица
+						.s-main__column.s-main__column_side
+							.main-side
+								.main-side__label цена от
+								.main-side__value 599 ₽
+								.main-side__count за 1 м
+									sup 2
+					a.s-main__button(href="#order" data-fancybox) Заказать
+					.s-main__more: a.main-more.anchor(href="#s-features")
+						.main-more__title Больше свойств
+						svg.main-more__icon(width="32" height="14" viewbox="0 0 32 14")
+							path(d="M 0 1 15.5 14 16.5 14 32 1 32 0 31 0 16 12 1 0 0 0")
+
+			.main-swiper__pagination

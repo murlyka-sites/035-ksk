@@ -1,0 +1,169 @@
+$color-dark = #2f2e2e;
+
+@import 'inc/fonts'
+
+* {
+	box-sizing border-box
+}
+
+.page {
+	margin 0
+	padding 0
+	color $color-dark
+	font-family 'Roboto Slab', serif
+	
+	background #b7b7b8 url(../images/bg.jpg) center top 
+}
+
+.container {
+	margin 0 10px
+	
+	@media (min-width 768px) {
+		margin 0 40px
+	}
+
+	@media (min-width 1300px) {
+		margin 0 80px	
+	}
+	
+	@media (min-width 1920px)  {
+		margin 0 160px
+	}
+}
+
+.title-2 {
+	margin 0
+	font-size 30px 
+	font-weight 700 
+	
+	@media (min-width 768px) {
+		font-size 40px
+	}
+	
+	@media (min-width 992px) {
+		font-size 50px 
+	}
+	
+	@media (min-width 1200px) {
+		font-size 70px
+	}
+}
+
+.title-3 {
+	margin 0
+	font-size 20px 
+	font-weight 700
+	
+	@media (min-width 1000px) {
+		font-size 30px
+	}
+}
+
+.video-wrapper {
+	width 100%
+	height 0
+	padding-top 25px 
+	padding-bottom 56.25%
+	
+	&__frame {
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100% 
+	} 
+}
+
+.ul {
+	padding 0
+	margin 0
+	font-size 16px 
+	font-weight 700
+	line-height 30px
+	list-style-type none
+	
+	&__item {
+		&::before {
+			content '• '
+		}
+		
+		margin-bottom 30px 
+	}
+}
+
+
+
+.swiper-nav-hor {
+	display flex
+	align-items center
+	justify-content center
+	
+	&__button {
+		fill #47b8f2
+		padding 15px 
+		
+		&:hover {
+			fill darken(#47b8f2, 10%)
+		}
+	}
+	
+	&__pagination {
+		.swiper-pagination-bullet {
+			padding 16px
+			width 44px 
+			height 44px
+			background #333232 content-box
+			opacity 1
+			
+			&-active {
+				background-color #47b8f2
+			}
+		}
+	}
+}
+
+@import 'inc/main'
+@import 'inc/360'
+@import 'inc/composition'
+
+@import 'inc/features'
+@import 'inc/architectural-pattern'
+@import 'inc/use'
+@import 'inc/zoom'
+@import 'inc/video'
+@import 'inc/about'
+@import 'inc/developing'
+@import 'inc/contact'
+@import 'inc/pixel'
+
+@import 'inc/use-left'
+@import 'inc/use-right'
+@import 'inc/popup-order'
+
+.youtube {
+	background-size contain
+	background-repeat no-repeat
+	
+	&__play {
+		content ""
+		display block
+		width 64px 
+		height 48px
+		background url(images/yt-play.svg) center / 64px 48px
+		position absolute
+		top 50%
+		left 50%
+		transform translate(-50%, -50%)
+		z-index 0
+		cursor pointer
+	}
+}
+
+.spinner {
+	background url(../images/spinner.svg) center  
+	background-repeat no-repeat
+	
+	&.lazy-loaded {
+		background transparent 
+	}
+}

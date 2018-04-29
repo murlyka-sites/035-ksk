@@ -1,0 +1,53 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+		meta(name="SKYPE_TOOLBAR", content="SKYPE_TOOLBAR_PARSER_COMPATIBLE")
+		meta(content="telephone=no", name="format-detection")
+
+		title KSK
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&amp;subset=cyrillic")
+		link(rel="stylesheet", href="css/style.css")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js")
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css")
+	body.page: .pixel-perfect
+		include pug/main
+		include pug/360
+		include pug/composition
+		include pug/features
+		include pug/architectural-pattern
+		include pug/use
+		include pug/zoom
+		include pug/video
+		include pug/about
+		include pug/developing
+		include pug/contact
+		
+		.hidden
+			#order.popup-order: form.popup-order__form( method="post")
+				h3.popup-order__title Оставить заявку
+				input.popup-order__field.popup-order__field_phone(placeholder="Телефон" type="tel")
+				.popup-order__or или
+				input.popup-order__field.popup-order__field_mail(placeholder="E-mail" type="email")
+				.popup-order__message
+					| Введите email или телефон
+				button.popup-order__button Оставить заявку
+
+			#success.popup-success
+				h3.popup-success__title Заявка отправлена.
+					br
+					| Скоро мы с Вами свяжемся!
+		
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js")
+		link(href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" rel="stylesheet")
+		script(src="js/zoom.js")
+		script(src="js/recliner.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/lazyyt/0.3.4/lazyYT.min.js")
+		script(src="js/main.js")
+
+			
