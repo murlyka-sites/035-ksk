@@ -3,9 +3,12 @@
 		h2.title-2.s-use__title Применение
 		.s-use__grid
 			.s-use__cell
-				include left.pug
-				//- .s-use__pr(src="images/use/1.jpg", alt="" width="513" height="513")
+				.square
+					object.square__pr.wow(type="image/svg+xml" data="left.svg" width="513" height="513")
+				//- include left.pug
 			.s-use__cell
-				include right.pug
+				.square
+					object.square__pr.wow(type="image/svg+xml" data="right.svg" width="513" height="513")
+				//- include right.pug
 
 
